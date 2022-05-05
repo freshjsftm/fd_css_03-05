@@ -1,17 +1,16 @@
-.main{
-  padding: 10px;
-  background-color: bisque;
-  font-size: 16px;
-}
-.article{
-  display: inline-block;
-  box-sizing: border-box;
-  width: 33.33%;
-  padding:20px;
-  /* border:1px solid red; */
-  vertical-align: top;
-}
-.heading,
-.content{
-  font-size: inherit;
-}
+/*
+display
+box-sizing
+width/height
+padding
+border
+margin
+
+background
+color
+
+unique property
+
+font
+text
+*/
