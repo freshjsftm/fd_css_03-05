@@ -1,27 +1,11 @@
-*{
-  box-sizing: border-box;
+ul {
+  padding-left: 1em;
+  /* list-style: none; */
+  list-style-position: inside;
+  list-style-type: circle;
+  list-style-image: url(./../icons/account-circle.png); 
+  font:inherit;
 }
-.container{
-  width: 100%;
-}
-.block{
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  border: 5px solid red;
-  padding-top:5%;
-
-  background-color:darkblue;
-  color:azure;
-
-  text-align: center;
-}
-.hide2{
-  display: none;
-}
-.hide3{
-  opacity: 0;
-}
-.hide1{
-  visibility: hidden;
+.title{
+  padding: 25px;
 }
