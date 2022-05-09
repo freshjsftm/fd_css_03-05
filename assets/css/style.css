@@ -1,11 +1,23 @@
-ul {
-  padding-left: 1em;
-  /* list-style: none; */
-  list-style-position: inside;
-  list-style-type: circle;
-  list-style-image: url(./../icons/account-circle.png); 
-  font:inherit;
+table{
+  width: 90%;
+  /* min-width: 600px; */
+  margin: auto;
+  /* border:3px solid red;*/
+  border-spacing: 20px;/*border-collapse: separate*/
+  border-collapse: collapse;
+  /* background-color:rgb(120, 148, 139); */
+  empty-cells: hide; /*border-collapse: separate*/
 }
-.title{
-  padding: 25px;
+th, 
+td{
+  border: 1px solid green;
+  /* background-color:aquamarine; */
 }
+td{
+  /* width: 20%; */
+  vertical-align: top;
+}
+.td-width{
+  width: 30%;
+  min-width: 200px;
+} 
