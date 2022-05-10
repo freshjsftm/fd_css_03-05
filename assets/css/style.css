@@ -1,23 +1,32 @@
-table{
-  width: 90%;
-  /* min-width: 600px; */
-  margin: auto;
-  /* border:3px solid red;*/
-  border-spacing: 20px;/*border-collapse: separate*/
-  border-collapse: collapse;
-  /* background-color:rgb(120, 148, 139); */
-  empty-cells: hide; /*border-collapse: separate*/
+* {
+  box-sizing: border-box;
 }
-th, 
-td{
-  border: 1px solid green;
-  /* background-color:aquamarine; */
+html,
+body {
+  font-size: 18px;
 }
-td{
-  /* width: 20%; */
-  vertical-align: top;
+
+/* .container > p {
+  background-color: green;
+} */
+/*селектор досерних элементов*/
+/* .block > p {
+  background-color: red;
+} */
+/*селектор потомков(вложенности)*/
+/* .container p {
+  background-color: blueviolet;
+} */
+
+/* селектор соседей */
+/* p + p{
+  background-color:yellow;
 }
-.td-width{
-  width: 30%;
-  min-width: 200px;
+.block + p{ 
+  background-color: lime;
 } 
+*/
+/*родственный селектор*/
+/* .block ~ p{
+  background-color:orange;
+} */
