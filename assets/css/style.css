@@ -1,45 +1,16 @@
-:root {
-  font-size: 20px;
+.btn{
+  box-sizing:border-box;
+  display: inline-block;
+  padding: 10px;
+  background-color:teal;
+  border: none;
+  font-size: 16px;
 }
-a {
+.btn:not(button){
   color: inherit;
+  background-color: aqua;
   text-decoration: none;
 }
-.navigation {
-}
-.link-list {
-  padding-left: 0;
-  list-style: none;
-  text-align: center;
-}
-.link-list > li {
-  display: inline-block;
-}
-.link-list > li > a {
-  display: block;
-  padding: 20px;
-  background-color: black;
-  color: white;
-}
-.link-list > li > a:link{
-  background-color: lawngreen;
-}
-.link-list > li > a:visited{
-  background-color: blue;
-}
-.link-list > li > a:hover,
-.link-list > li > a:focus {
-  background-color: fuchsia;
-  /* outline: none; */
-}
-/* .link-list > li > a:focus {
-  background-color: bisque;
-} */
-/* .link-list > li > a:active{ 
-  background-color: aqua;
-} */
-
-.navigation + p:hover {
-  color: fuchsia;
-  cursor: pointer;
+.btn:hover:not(a){
+  background-color: crimson;
 }
