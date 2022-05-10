@@ -1,32 +1,3 @@
-* {
-  box-sizing: border-box;
+:root{
+  font-size: 20px;
 }
-html,
-body {
-  font-size: 18px;
-}
-
-/* .container > p {
-  background-color: green;
-} */
-/*селектор досерних элементов*/
-/* .block > p {
-  background-color: red;
-} */
-/*селектор потомков(вложенности)*/
-/* .container p {
-  background-color: blueviolet;
-} */
-
-/* селектор соседей */
-/* p + p{
-  background-color:yellow;
-}
-.block + p{ 
-  background-color: lime;
-} 
-*/
-/*родственный селектор*/
-/* .block ~ p{
-  background-color:orange;
-} */
