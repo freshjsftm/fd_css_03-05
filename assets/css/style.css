@@ -1,74 +1,61 @@
-:root{
-  --ligtest-color:#f3f3f3;
-  --ligt-color:#ececec;
-  --medium-color:#dbdbdb;
-  --radius: 8px;
-  font-family: sans-serif;
-  font-size: 16px;
+*{
+  box-sizing: border-box;
 }
-table {
-  min-width: 600px;
-  width: 100%;
-  max-width: 900px;
+body{
+  height: 300vh;
+  margin:0;
+}
+.wrapper{
+  width: 80vw;
+  height: 80vh;
   margin: auto;
-  border-collapse: collapse; 
-}
-td{ 
-  padding: 1em;
-  background-color: var(--ligtest-color);
+  padding-top: 10vh;
+  background-color:darkorange;
   text-align: center;
-  vertical-align: center;
 }
-thead th{
-  color: var(--ligtest-color);
+.inner{
+  width: 80%;
+  height: 60vh;
+  margin: auto;
+  background-color:fuchsia;  
 }
-thead th:not(th:first-child){
-  width: 17%;
-  text-transform: lowercase;
+.block{
+  width: 50px;
+  height: 50px;
+  border: 3px solid;
+  background-color: #ffffffaa;
 }
-thead th:first-child{
-  border-top-left-radius: var(--radius);
-  background-color: #7987ac;
+
+.pos1{
+  position: static;
+  /* left: 100px; */
 }
-thead th:first-child::first-letter{
-  text-transform: uppercase;
+.pos2{
+  position: relative;
+  /* left: 20px; */
+  /* right: -20px; */
+  /* bottom:10px; */
+  /* top: 10px; */
 }
-thead th:nth-child(2){
-  background-color: #4f628d;
+/* .pos3{
+  position: fixed;
+  bottom:0;
+  right:0;
+} */
+
+
+.fixed{
+  position: fixed;
 }
-thead th:nth-child(3){
-  background-color: #2f4173;
+.top{
+  top:0;
 }
-thead th:nth-child(4){
-  background-color: #162954;
+.bottom{
+  bottom:0;
 }
-thead th:last-child{
-  border-top-right-radius: var(--radius);
-  background-color: #07153a;
+.left{
+  left:0;
 }
-tfoot td:first-child {
-  border-bottom-left-radius: var(--radius);
-}
-tfoot td:last-child {
-  border-bottom-right-radius: var(--radius);
-}
-tbody td:first-child{
-  padding-left: 1em;
-  text-align: left;
-}
-tbody tr:nth-child(odd) td:nth-child(odd),
-tfoot tr:nth-child(odd) td:nth-child(odd){
-  background-color: var(--medium-color);
-}
-tbody tr:nth-child(odd) td:nth-child(even),
-tbody tr:nth-child(even) td:nth-child(odd),
-tfoot tr:nth-child(odd) td:nth-child(even){
-  background-color: var(--ligt-color);
-}
-thead p:nth-child(2){
-  margin-bottom: 5px;
-  font-size: 2em;
-}
-thead p:nth-child(2)+p{
-  margin-top: 0px;
+.right{
+  right:0;
 }
