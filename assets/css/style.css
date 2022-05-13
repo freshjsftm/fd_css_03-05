@@ -27,8 +27,8 @@ a {
 }
 .list-item {
   display: inline-block;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 /* .list-item+.list-item{
   padding-left: 10px;
@@ -36,6 +36,7 @@ a {
 .list-link {
   display: block;
   padding: 1em 2em;
+  position: relative;
   background-color: pink;
   /* transition: all; */
   transition-property: background-color;
@@ -45,7 +46,30 @@ a {
 }
 .list-link:hover {
   background-color: orange;
-  padding: 1em 4em;
+}
+.list-link::after,
+.list-link::before{
+  content: '';
+  display: block;
+  width: 0;
+  height: 5px;
+  position: absolute;
+  background-color: blue;  
+  transition-property: width;
+  transition-duration: 700ms;
+  transition-timing-function: ease;
+  transition-delay: .4s;
+}
+.list-link::after{
+  left:0;
+  bottom:-7px;
+}
+.list-link::before{
+  /*доделать*/
+}
+.list-link:hover::after,
+.list-link:hover::before{
+  width: 100%;
 }
 
 main {
@@ -93,4 +117,31 @@ p::first-line {
 ::selection {
   color: darkviolet;
   background-color: teal;
+}
+
+.inner{
+  width: 10%;
+  height: 30px;
+  background-color: lime;
+  transition-property: width;
+  transition-duration: 1s;
+}
+.ease{
+  transition-timing-function: ease;
+}
+.linear{
+  transition-timing-function: linear;
+}
+.ease-in{
+  transition-timing-function: ease-in;
+}
+.ease-out{
+  transition-timing-function: ease-out;
+}
+.ease-in-out{
+  transition-timing-function: ease-in-out;
+}
+
+.wrapper:hover .inner{
+  width:100%;
 }
