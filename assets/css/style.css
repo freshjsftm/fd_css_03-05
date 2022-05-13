@@ -1,18 +1,48 @@
+h1{
+  width: 200px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+h1::before,
+h1::after{
+  content: url(./../icons/flower-tulip.svg);
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top:5px;
+  /* background-color:aqua; */
+  color:white;
+}
+h1::before{
+  left:0;
+}
+h1::after{
+  right: 0;
+}
+
+
+
+
+
+
 p{
   color: violet;
   text-indent: 2em;
 }
-p::first-letter{
+::first-letter{
   color:orange;
   /* background-color:firebrick; */
   font-size: 2em;
   text-shadow: -12px -11px 3px rgba(255, 150, 150, 0.66);
+  text-transform: uppercase;
 }
 p::first-line{
   color:blue;
   background-color:rgb(255, 219, 206);
 }
-p::selection{
+::selection{
   color:darkviolet;
   background-color: teal;
 }
