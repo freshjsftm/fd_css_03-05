@@ -8,27 +8,92 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <form class="flex-column" action="">
-      <label class="flex-column">
-        <span>Username</span>
-        <input 
-          type="text" 
-          name="username" 
-          placeholder="user name" 
-          autofocus
-          required
-          pattern="^[A-Z][a-z0-9]{2,10}$"
-        />
-      </label>
-      <label class="flex-column">
-        <span>Password</span>
-        <input type="password" name="password" required/>
-      </label>
-      <label class="flex-column">
-        <span>Email</span>
-        <input type="email" name="email" required/>
-      </label>
+    <form
+      class="flex-column"
+      action=""
+      method="GET"
+      enctype="multipart/form-data"
+    >
+      <input type="file" name="file" />
+      <fieldset>
+        <legend>Choose</legend>
+        <label>
+          <datalist id="list-town">
+            <option value="Zp">
+            <option value="Lv">
+            <option value="Luck">
+            <option value="Dp1">
+            <option value="Dp1">
+          </datalist>
+          <input type="text" name="town2" list="list-town"/>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Private Info</legend>
+        <label class="flex-column">
+          <span>Username</span>
+          <input
+            type="text"
+            name="username"
+            placeholder="user name"
+            autofocus
+          />
+        </label>
+        <textarea name="" id="" rows="3" placeholder="message"></textarea>
+        <label class="flex-column">
+          <span>Password</span>
+          <input type="password" name="password" required/>
+        </label>
+        <label class="flex-column">
+          <span>Email</span>
+          <input type="email" name="email" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Data</legend>
+        <label class="gender"
+          >Female<input type="radio" name="gender" value="0" checked
+        /></label>
+        <label class="gender"
+          >Male<input type="radio" name="gender" value="1"
+        /></label>
+        <label class="gender"
+          >NOT<input type="radio" name="gender" value="2"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Data</legend>
+        <label
+          >licensia<input type="checkbox" name="licensia" value="1"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Language</legend>
+        <label
+          >uk<input type="checkbox" name="Language" value="uk" checked
+        /></label>
+        <label>en<input type="checkbox" name="Language" value="en" /></label>
+        <label>az<input type="checkbox" name="Language" value="az" /></label>
+        <label>pl<input type="checkbox" name="Language" value="pl" /></label>
+      </fieldset>
+      <input type="hidden" name="system" />
+      <input type="number" name="number" min="10" max="100" step="5" />
+      <input type="range" name="range" min="10" max="110" />
+      <!-- <button type="submit"><img src="./assets/icons/email-send.svg" alt="" srcset=""> Submit</button> -->
       <input type="submit" value="Sign in" />
+      <!-- <input type="reset" value="Reset" />
+      <input type="button" value="Click me" /> -->
+      
+      <select name="town" size="1">
+        <optgroup label="east">
+          <option value="1">Zp</option>
+          <option value="2">Dnepr</option>
+        </optgroup>
+        <optgroup label="other">
+          <option value="3">Odesa</option>
+          <option value="4">Kyiv</option>
+        </optgroup>
+      </select>
     </form>
   </body>
 </html>

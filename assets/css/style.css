@@ -27,3 +27,24 @@ input:focus{
   border: 1px solid coral;
   outline: 1px solid  coral;
 }
+input[type="radio"]{
+  margin-right: 10px;
+  visibility: hidden;
+}
+input[type="radio"]::after{
+  content: url(./../icons/cloud-check-outline.svg);
+  display: block;
+  width: 20px;
+  height: 20px;
+  visibility: visible;
+  transform: translateY(-5px);
+}
+input[type="radio"]:checked::after{
+  content: url(./../icons/cloud-check.svg);
+}
+::placeholder{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+:required{
+  background-color:pink;
+}
