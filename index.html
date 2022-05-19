@@ -8,12 +8,27 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <form action="#">
-      <label for="username">Username</label>      
-      <input type="text" name="username" id="username"  placeholder="user name">
-      <input type="password" name="password" placeholder="password">
-      <input type="submit" value="Sign in">
+    <form class="flex-column" action="">
+      <label class="flex-column">
+        <span>Username</span>
+        <input 
+          type="text" 
+          name="username" 
+          placeholder="user name" 
+          autofocus
+          required
+          pattern="^[A-Z][a-z0-9]{2,10}$"
+        />
+      </label>
+      <label class="flex-column">
+        <span>Password</span>
+        <input type="password" name="password" required/>
+      </label>
+      <label class="flex-column">
+        <span>Email</span>
+        <input type="email" name="email" required/>
+      </label>
+      <input type="submit" value="Sign in" />
     </form>
-
   </body>
 </html>

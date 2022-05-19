@@ -1,21 +1,29 @@
-*{
-  box-sizing:border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-  background-color:bisque;
+body {
+  background-color: bisque;
 }
-form{
+.flex-column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+}
+form {
   width: 300px;
   min-height: 300px;
   margin: auto;
   padding: 15px;
   border: 1px solid #aaa;
 }
-form>*{
+form input {
   font-size: 16px;
   padding: 0.3em 0.5em;
+}
+label > input{
+  margin-top: 10px;
+}
+input:focus{
+  border: 1px solid coral;
+  outline: 1px solid  coral;
 }
