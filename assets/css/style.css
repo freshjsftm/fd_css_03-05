@@ -27,3 +27,26 @@ body{
 .social-item{
   display: inline-block;
 }
+
+.content{
+  /* column-count: 5; */
+  /* column-width: 300px; */
+  padding: 30px;
+  columns: 4 300px;
+  column-rule: #888 dashed 2px;
+  column-gap: 30px;
+  text-align: justify;
+}
+.content > h2{
+  padding:1em;
+  column-span: all;
+  font-size: 2em;
+  text-align: center;
+}
+.content > p:first-of-type{
+  padding-top: 0;
+}
+.content > p{
+  padding-top: 1em;
+  text-indent: 2em;
+}
