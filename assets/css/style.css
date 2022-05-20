@@ -1,50 +1,17 @@
-* {
-  box-sizing: border-box;
+body{
+  background-color: #ccc;
 }
-body {
-  background-color: bisque;
+.users-cards{
+  text-align: center;
 }
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.user-card{
+  display: inline-flex;
+  max-width: 540px;
+  min-height: 350px;
+  background-color: white;
 }
-form {
-  width: 300px;
-  min-height: 300px;
-  margin: auto;
-  padding: 15px;
-  border: 1px solid #aaa;
-}
-form input {
-  font-size: 16px;
-  padding: 0.3em 0.5em;
-}
-label > input{
-  margin-top: 10px;
-}
-input:focus{
-  border: 1px solid coral;
-  outline: 1px solid  coral;
-}
-input[type="radio"]{
-  margin-right: 10px;
-  visibility: hidden;
-}
-input[type="radio"]::after{
-  content: url(./../icons/cloud-check-outline.svg);
-  display: block;
-  width: 20px;
-  height: 20px;
-  visibility: visible;
-  transform: translateY(-5px);
-}
-input[type="radio"]:checked::after{
-  content: url(./../icons/cloud-check.svg);
-}
-::placeholder{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-:required{
-  background-color:pink;
+.user-card-avatar{
+  width: 50%;
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
 }
