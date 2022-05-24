@@ -1,0 +1,12 @@
+.users-card{}
+
+.user-card{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 576px){
+  .user-card{
+    flex-direction: row;
+  }
+}
