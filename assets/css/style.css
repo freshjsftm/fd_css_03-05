@@ -1,12 +1,11 @@
 @charset "utf-8";
 /*@import url(./reset.css);*/
-@import './fonts.css'; /*load full*/
-@import './reset.css'; /*load full*/
+@import './fonts.css' all; /*load full*/
+@import './reset.css' all; /*load full*/
+/* @import './screen.css' screen;
+@import './print.css' print; */
 
 h2{
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 3rem;
-  font-weight: 200;
-  /* font-style: italic; */
-  color: teal;
+  font-weight: 500;
 }

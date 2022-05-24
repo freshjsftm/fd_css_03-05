@@ -16,3 +16,9 @@
   font-weight: 200;
   font-style: normal;
 }
+@font-face{
+  font-family: 'Plus Jakarta Sans';
+  src: url(./../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraLightItalic.ttf) format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
