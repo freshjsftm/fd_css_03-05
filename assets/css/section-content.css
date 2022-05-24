@@ -1,33 +1,23 @@
-.content{
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: 500;
-} 
-.content .content-heading{
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: 500;
-  font-size: 1.5rem;
-  font-style: italic;
-  color: teal;
+/*
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+*/
+
+/*mobile-first*/
+.list{
   background-color: tan;
 }
-
-/* @media print, (width:100px){
-  .content .content-heading{
-    display: none;
+@media screen and (min-width: 576px){
+  .list{
+    background-color: darkcyan;
+    font-size: 0;
   }
-} */
-
-/*начиная с указанной ширины*/
-@media screen and (min-width:450px){
-  .content .content-heading{
-    background-color: yellow;
-  }
-}
-
-
-/*до указанной ширины*/
-@media screen and (max-width:450px){
-  .content .content-heading{
-    background-color: pink;
+  .list li{
+    display: inline-block;
+    font-size: 2rem;
   }
 }
