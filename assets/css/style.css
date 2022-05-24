@@ -1,52 +1,17 @@
-body{
-  background-color: #ccc;
+:root{
+  font-size: 10px; 
 }
-.users-cards{
-  text-align: center;
+.content{
+  font-size: 1.5rem; 
+  line-height: 1.5;
 }
-.user-card{
-  display: inline-flex;
-  max-width: 540px;
-  min-height: 350px;
-  background-color: white;
-}
-.user-card-avatar{
-  width: 50%;
-  object-fit: cover;
-  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
-  filter: grayscale(90%);
-  transition: filter 1s linear 0.3s;
-}
-.user-card-avatar:hover{
-  filter: grayscale(0%);
-}
-.user-card-info{
-  margin: auto;
-  margin-left: 35px;
-}
-.social-item{
-  display: inline-block;
+h2{
+  font-size: 2em; 
 }
 
-.content{
-  /* column-count: 5; */
-  /* column-width: 300px; */
-  padding: 30px;
-  columns: 4 300px;
-  column-rule: #888 dashed 2px;
-  column-gap: 30px;
-  text-align: justify;
+ul{
+  font-size: 0;
 }
-.content > h2{
-  padding:1em;
-  column-span: all;
-  font-size: 2em;
-  text-align: center;
-}
-.content > p:first-of-type{
-  padding-top: 0;
-}
-.content > p{
-  padding-top: 1em;
-  text-indent: 2em;
+li{
+  font-size: 2rem; //////
 }
