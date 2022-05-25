@@ -5,58 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>title page | CSS</title>
     <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon" />
-    <!-- <link rel="stylesheet" href="./assets/css/fonts.css"> -->
-    <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css"/>
-    <link rel="stylesheet" href="./assets/css/section-content.css">
-    <link rel="stylesheet" href="./assets/css/section-users-card.css">
+    
   </head>
   <body>
-    <section class="content">
-      <h2 class="content-heading">Title tenetur repudiandae aperiam magni esse!</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tenetur repudiandae cumque ea quo eos, quia facilis. Voluptate ea odit ab dignissimos quis esse temporibus ducimus iste facilis! </p>      
-      <ul class="list">
-        <li>text 1</li>
-        <li>text 2</li>
-        <li>text 3</li>
-        <li>text 4</li>
-        <li>text 5</li>
-      </ul>
-    </section>
-    <section class="users-card">
-      <article class="user-card">
-        <div class="wrapper-avatar">
-          <img src="./assets/images/avatar.jpg" alt="">
-        </div>
-        <div class="user-info">
-          <h2>elon musk</h2>
-          <p>Lorem of ipsum dolor.</p>
-          <ul class="social">
-            <li><a href="">fb</a></li>
-            <li><a href="">tw</a></li>
-            <li><a href="">yt</a></li>
-            <li><a href="">in</a></li>
-          </ul>
-          <button>read more</button>
-        </div>
-      </article>
-      <article class="user-card">
-        <div class="wrapper-avatar">
-          <img src="./assets/images/avatar.jpg" alt="">
-        </div>
-        <div class="user-info">
-          <h2>elon musk</h2>
-          <p>Lorem of ipsum dolor.</p>
-          <ul class="social">
-            <li><a href="">fb</a></li>
-            <li><a href="">tw</a></li>
-            <li><a href="">yt</a></li>
-            <li><a href="">in</a></li>
-          </ul>
-          <button>read more</button>
-        </div>
-      </article>
-    </section>
+    <picture>
+      <!-- <source srcset="./assets/images/car_800.webp" media="(max-width: 768px)"> -->
+      <source srcset="./assets/images/car2140.webp" media="(min-width: 768px) and (min-resolution: 70dpi)" type="image/webp">
+      <source srcset="./assets/images/car2140.jpeg" media="(min-width: 768px)" type="image/jpeg">
+      <source srcset="./assets/images/car_800.webp" type="image/webp">
+      <img class="img" src="./assets/images/car800.jpg" alt="car">
+    </picture>
+    
+
+  <!-- 
+    1 - большой размер не нужен на маленьких
+    2 - новый формат webp
+    3 - мониторы ретина 
+  -->
 
   </body>
 </html>
