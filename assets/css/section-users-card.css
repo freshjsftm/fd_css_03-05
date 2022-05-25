@@ -1,12 +1,21 @@
-.users-card{}
-
-.user-card{
-  display: flex;
-  flex-direction: column;
+.users-card{
+  text-align: center;
 }
+.user-card{
+  max-width: 200px;
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  background-color: aquamarine;
+}
+.wrapper-avatar{}
 
 @media screen and (min-width: 576px){
   .user-card{
+    max-width: 350px;
     flex-direction: row;
+  }
+  .wrapper-avatar{
+    width: 50%;
   }
 }
