@@ -8,7 +8,7 @@
 */
 
 :root{
-  font-size: 14px;
+  font-size: 14px; /* 1rem */
 }
 *{
   box-sizing: border-box;

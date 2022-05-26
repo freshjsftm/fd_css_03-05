@@ -6,25 +6,38 @@
     <title>title page | CSS</title>
     <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/fonts.css">
-    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css"/>
+    <link rel="stylesheet" href="./assets/css/grid.css"/>
     <link rel="stylesheet" href="./assets/css/style.css"/>
-    
+    <link rel="stylesheet" href="./assets/css/news.css">
   </head>
   <body>
-    <picture>
-      <!-- <source srcset="./assets/images/car_800.webp" media="(max-width: 768px)"> -->
-      <source srcset="./assets/images/car2140.webp" media="(min-width: 768px) and (min-resolution: 70dpi)" type="image/webp">
-      <source srcset="./assets/images/car2140.jpeg" media="(min-width: 768px)" type="image/jpeg">
-      <source srcset="./assets/images/car_800.webp" type="image/webp">
-      <img class="img" src="./assets/images/car800.jpg" alt="car">
-    </picture>
-    
+    <section class="container news">
+      <div class="row">
+        <article class="col-6 col-sm-3 col-md-3 bg-color">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse repellendus unde modi cupiditate quaerat, maiores delectus quos expedita cum explicabo eos aliquid culpa? Beatae libero laborum maiores dolorum error, ullam porro dolor minus veniam nisi similique, provident corporis itaque, assumenda illo voluptatum magni magnam tenetur fuga excepturi cumque animi. Tempora, earum. Magnam quidem doloremque vitae unde placeat fuga laudantium expedita.</p>
+        </article>
+        <article class="col-6 col-sm-9 col-md-3">
+          <h2>Title</h2>
+          <p>Error magnam dolor impedit maiores vitae aliquid suscipit. Veritatis perferendis perspiciatis, nulla eius facilis, quae odio impedit voluptatibus natus corporis voluptatum magni voluptates quis ipsam illum. Facilis odit non, earum doloremque voluptatem nemo in ex pariatur deserunt placeat quae quo soluta voluptas dolorum culpa quidem harum maiores! Perspiciatis unde obcaecati quasi illum iste! Corrupti tempora quaerat a accusamus minus sequi.</p>
+        </article>
+      </div>
+    </section>
+    <section class="container">
 
-  <!-- 
-    1 - большой размер не нужен на маленьких
-    2 - новый формат webp
-    3 - мониторы ретина 
-  -->
-
+    </section>
+    <section class="container about">
+      <div class="row">
+        <article class="col-6 col-md-3">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse repellendus unde modi cupiditate quaerat, maiores delectus quos expedita cum explicabo eos aliquid culpa? Beatae libero laborum maiores dolorum error, ullam porro dolor minus veniam nisi similique, provident corporis itaque, assumenda illo voluptatum magni magnam tenetur fuga excepturi cumque animi. Tempora, earum. Magnam quidem doloremque vitae unde placeat fuga laudantium expedita.</p>
+        </article>
+        <article class="col-6 col-md-3">
+          <h2>Title</h2>
+          <p>Error magnam dolor impedit maiores vitae aliquid suscipit. Veritatis perferendis perspiciatis, nulla eius facilis, quae odio impedit voluptatibus natus corporis voluptatum magni voluptates quis ipsam illum. Facilis odit non, earum doloremque voluptatem nemo in ex pariatur deserunt placeat quae quo soluta voluptas dolorum culpa quidem harum maiores! Perspiciatis unde obcaecati quasi illum iste! Corrupti tempora quaerat a accusamus minus sequi.</p>
+        </article>
+      </div>
+    </section>
   </body>
 </html>
